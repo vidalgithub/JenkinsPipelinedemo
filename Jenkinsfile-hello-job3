@@ -14,11 +14,13 @@ pipeline {
             }
         }
         
+        
         stage('Deploy') {
             steps {
                 echo 'I am deploying my second job using Jenkinsfile'
             }
         }
+        
         
         stage('Test') {
             steps {
