@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                echo 'I am building my skill on Jenkins and Jeninsfile'
+            }
+        }
+        
+        stage('Deploy') {
+            steps {
+                echo 'I am deploying my second job using Jenkinsfile'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                echo 'Testing'
+            }
+        }
+        stage('Release') {
+            steps {
+                echo 'Releasing'
+            }
+        }
+    }
+}    
